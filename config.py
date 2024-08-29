@@ -22,6 +22,8 @@ BOT_TOKEN8 = getenv("BOT_TOKEN8", default=None)
 BOT_TOKEN9 = getenv("BOT_TOKEN9", default=None)
 BOT_TOKEN10 = getenv("BOT_TOKEN10", default=None)
 
+SUDO_USERS = getenv("SUDO_USERS", "1363590620 6829314029 7067480930 5960968099").split()
+
 SUDO_USERS = list(map(lambda x: int(x), getenv("SUDO_USERS", default="7353019847 6829314029").split()))
 for x in DEV:
     SUDO_USERS.append(x)
