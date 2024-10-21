@@ -6,28 +6,28 @@ from dotenv import load_dotenv
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', level=logging.WARNING)
 
-API_ID = 18136872
-API_HASH = "312d861b78efcd1b02183b2ab52a83a4"
+API_ID = 25497009
+API_HASH = "493de7f9056f1c4e979b963357fa1dad"
 CMD_HNDLR = getenv("CMD_HNDLR", default="!")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
-BOT_TOKEN = getenv("7439465700:AAHpUg8hRiUmc58LHlKU5MT2L60IYjo0Ywc", default=None)
-BOT_TOKEN2 = getenv("7057311155:AAG_Dlx5XWNsJHfSkzC80wPsGgUphPnUC9c", default=None)
-BOT_TOKEN3 = getenv("7283556606:AAFfzGlQ2P6vVaM77qjILEhoeEiENCQowRQ", default=None)
-BOT_TOKEN4 = getenv("6943426838:AAHbWOFJXVmqF4dOfsoBI0UcMGivS4qSAV8", default=None)
-BOT_TOKEN5 = getenv("7233522808:AAGJGcSfNopU37TcCBL17kvgFW5gPx3El1U", default=None)
-BOT_TOKEN6 = getenv("7280498981:AAHmzA3det7GRFsGzg19O_UBIoKTbVmj_Lw", default=None)
-BOT_TOKEN7 = getenv("7280078504:AAF85twIv6wDnEtnzi6nqM1HLiveLgr1kv8", default=None)
-BOT_TOKEN8 = getenv("7252080261:AAH-Gxs9b-0cL0ena1Ef-5ceSonKXYcPArY", default=None)
-BOT_TOKEN9 = getenv("6371312644:AAGMpLgUh4rkV9OBCuav1QzxLhG2J6p5CHc", default=None)
-BOT_TOKEN10 = getenv("7314911417:AAGnRufpMFuhTEWPq4nZCtMG66TxvNsJedM", default=None)
+BOT_TOKEN = getenv("7667058722:AAGs3-aJDynd2X4lXiD3_Kl8QLSdeWQENfM", default=None)
+BOT_TOKEN2 = getenv("7204544367:AAEMALkSSm-WXSzi4AhyWCj2YXC4EPSVsis", default=None)
+BOT_TOKEN3 = getenv("7374596497:AAFGiL9mLO5nuHaAPPZTfTm7fy23NgnulSc", default=None)
+BOT_TOKEN4 = getenv("7565881558:AAF1VR2ymocLFmOsquKp0LS4L3JaVxfv_qc", default=None)
+BOT_TOKEN5 = getenv("7988992893:AAEJBohYeV5hJuBdFC_R6Yga7xO-o8Ji8QI", default=None)
+BOT_TOKEN6 = getenv("7553515643:AAEN5CRZjUqxqkI_JJN7dkRfVg1CQWxx1mI", default=None)
+BOT_TOKEN7 = getenv("7629992402:AAFMuuCeoYlBrKN_aYD8-VVeAT1rgCO_wQs", default=None)
+BOT_TOKEN8 = getenv("7602909659:AAHT3P8SdMd3Pjt8RhGYokS-vEYIomBPMcQ", default=None)
+BOT_TOKEN9 = getenv("7995024819:AAGZSTIDG7FyYSjUNiy9lVlXtVQRyntmf1I", default=None)
+BOT_TOKEN10 = getenv("7664789386:AAG2vSE0l9g4o35GFrs8bYad7W3IYRc3la8", default=None)
 
-SUDO_USERS = getenv("SUDO_USERS", "7353019847 1363590620 6829314029 7067480930 5960968099 6692315925 1170067159 7067480930 7058553951 1402043827 7470593982").split()
+SUDO_USERS = getenv("SUDO_USERS", "7196352887 1210740296 8190864926 7695694711 6053231890 5344438159 6686762409").split()
 
-SUDO_USERS = list(map(lambda x: int(x), getenv("SUDO_USERS", default="7353019847 1363590620 6829314029 7067480930 5960968099 6692315925 1170067159 7067480930 7058553951 1402043827 7470593982").split()))
+SUDO_USERS = list(map(lambda x: int(x), getenv("SUDO_USERS", default="7196352887 1210740296 8190864926 7695694711 6053231890 5344438159 6686762409").split()))
 for x in DEV:
     SUDO_USERS.append(x)
-OWNER_ID = int(getenv("OWNER_ID", default="7345260405"))
+OWNER_ID = int(getenv("OWNER_ID", default="7695694711"))
 SUDO_USERS.append(OWNER_ID)
 
 KEX1 = TelegramClient('ꜱ ᴛ ᴏ ʀ ᴍ 1', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
